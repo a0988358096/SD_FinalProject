@@ -26,6 +26,10 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
+	    $table->string('dorm');
+            $table->integer('room');
+	    $table->string('port');
+	    $table->string('mac_address');
         });
     }
 

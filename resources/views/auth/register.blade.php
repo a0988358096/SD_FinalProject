@@ -50,11 +50,46 @@
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-md-6 col-md-offset-4">
+                <div class="col-md-6">
                     <button type="submit" class="btn btn-primary">
                         Register
                     </button>
                 </div>
+		<div class="col-md-6 col-md-offset-6">
+		    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal123">
+			Launch E
+		    </button>
+		    
+		    <div class="modal fade" id="myModal123" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  			<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<h4 class="modal-title" id="myModalLabel">IP Register</h4>
+      					</div>
+      					<div class="modal-body">
+						{!! Form::label('dorm',"Dormitory",array('class' => 'control-label')) !!}
+						
+        						{!! Form::select('dorm',array('f1' =>'B3', 'f2' => 'B4','f3' => 'B5','f4' => 'B6','f5' => 'B7','f6' => 'B9','f7' => 'B11','f8' => 'B12','f9' => 'B13','f10' => 'B1','f11' => 'G1','f12' => 'G2','f13' => 'G3','f14' => 'G4','f15' => 'G14','f16' => 'GH','f17' => 'SP')) !!}
+						<br>
+						 {!! Form::label('room',"Room",array('class' => 'control-label')) !!}
+							{!! Form::text('room',null, array('class' => 'form-control')) !!}
+						<br>
+						{!! Form::label('port', "Port", array('class' => 'control-label')) !!}
+							{!! Form::select('port', array('a' => 'A','b' => 'B','c' => 'C','d' => 'D')) !!}
+						<br>		
+						{!! Form::label('mac_address',"Mac Address",array('class' => 'control-label')) !!}
+                                                          {!! Form::text('mac_address',null , array('class' => 'form-control')) !!}
+		
+     				        </div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-primary">Save changes</button>
+      					</div>
+    				</div>
+
+  			</div>
+		    </div>	
+		</div>
             </div>
             {!! Form::close() !!}
         </div>

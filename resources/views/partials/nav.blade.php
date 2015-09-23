@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Laravel</a>
+            <a class="navbar-brand" href="#">NCU SD</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -20,10 +20,7 @@
                     <a href="{{ URL::to('articles') }}">Articles</a>
                 </li>
                 <li class="{{ (Request::is('about') ? 'active' : '') }}">
-                    <a href="{{ URL::to('about') }}">About</a>
-                </li>
-                <li class="{{ (Request::is('contact') ? 'active' : '') }}">
-                    <a href="{{ URL::to('contact') }}">Contact</a>
+                    <a href="{{ url('about') }}">About</a>
                 </li>
             </ul>
 

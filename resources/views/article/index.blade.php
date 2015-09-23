@@ -3,8 +3,10 @@
 @section('title')
 	@parent
 @stop
-
 @section('content')
+	<div class="jumbotron">
+		<h1>Forum</h1>
+	</div>
 	@foreach($articles as $item)
 		<h3>{{ $item->title }}</h3>
 		<p>{!! $item->introduction !!}</p>
@@ -13,4 +15,6 @@
 		</div>
 	@endforeach
 	{!! $articles->render() !!}
+	<br>
 @stop
+

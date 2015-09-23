@@ -29,6 +29,8 @@ class UserRequest extends FormRequest {
 					'name' => 'required|min:3',
 					'email' => 'required|email|unique:users,email',
 					'password' => 'required',
+					'room' => 'required',
+					'mac_address' => 'required',
 				];
 			}
 			case 'PUT':
