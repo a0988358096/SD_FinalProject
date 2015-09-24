@@ -44,6 +44,10 @@
                                 @endif
                                 <li role="presentation" class="divider"></li>
                             @endif
+			    <li>
+				<p2>email: {{Auth::user()->email}}</p2>	
+				<p1>{{Auth::user()->dorm}}-{{Auth::user()->room}}-{{Auth::user()->port}}</p1>
+			    </li>
                             <li>
                                 <a href="{{ URL::to('auth/logout') }}"><i class="fa fa-sign-out"></i> Logout</a>
                             </li>
